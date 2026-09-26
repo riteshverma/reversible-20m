@@ -1,0 +1,204 @@
+=== rev_euler lr=0.0015 ===
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.0015
+step 400/1220 loss 5.4793 ema 5.4941 lr 1.20e-03 tok/s 43.4k elapsed 76s
+step 800/1220 loss 5.3210 ema 5.3037 lr 5.26e-04 tok/s 41.5k elapsed 158s
+step 1200/1220 loss 5.2120 ema 5.2211 lr 1.51e-04 tok/s 40.4k elapsed 244s
+step 1220/1220 loss 5.2927 ema 5.2244 lr 1.50e-04 tok/s 40.4k elapsed 248s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.0015,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.224390648519529,
+  "final_val_loss": 5.307320910969943,
+  "val_ppl": 201.80883964917803,
+  "tokens_per_s": 40369.71378677688,
+  "peak_mem_allocated_mb": 1009.64697265625,
+  "peak_mem_reserved_mb": 1194.0,
+  "wall_s": 247.99162364006042,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== rev_euler lr=0.003 ===
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.003
+step 400/1220 loss 5.4713 ema 5.4837 lr 2.41e-03 tok/s 41.6k elapsed 79s
+step 800/1220 loss 5.2943 ema 5.2868 lr 1.05e-03 tok/s 39.9k elapsed 165s
+step 1200/1220 loss 5.1708 ema 5.1828 lr 3.02e-04 tok/s 39.1k elapsed 252s
+step 1220/1220 loss 5.2510 ema 5.1860 lr 3.00e-04 tok/s 39.1k elapsed 256s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.003,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.185985759813003,
+  "final_val_loss": 5.271531040095941,
+  "val_ppl": 194.71384905917333,
+  "tokens_per_s": 39087.388981324824,
+  "peak_mem_allocated_mb": 1009.64697265625,
+  "peak_mem_reserved_mb": 1194.0,
+  "wall_s": 256.2141194343567,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== rev_euler lr=0.006 ===
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.006
+step 400/1220 loss 5.5072 ema 5.5154 lr 4.82e-03 tok/s 40.9k elapsed 81s
+step 800/1220 loss 5.3059 ema 5.3017 lr 2.10e-03 tok/s 38.1k elapsed 172s
+step 1200/1220 loss 5.1675 ema 5.1789 lr 6.04e-04 tok/s 37.9k elapsed 260s
+step 1220/1220 loss 5.2471 ema 5.1799 lr 6.00e-04 tok/s 37.9k elapsed 264s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.006,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.17989071235393,
+  "final_val_loss": 5.267421228972326,
+  "val_ppl": 193.9152540777156,
+  "tokens_per_s": 37879.57019683199,
+  "peak_mem_allocated_mb": 1009.64697265625,
+  "peak_mem_reserved_mb": 1194.0,
+  "wall_s": 264.3166301250458,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== rev_mid lr=0.0015 ===
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.0015
+step 400/1220 loss 5.4679 ema 5.4864 lr 1.20e-03 tok/s 39.1k elapsed 84s
+step 800/1220 loss 5.3113 ema 5.3047 lr 5.26e-04 tok/s 36.5k elapsed 180s
+step 1200/1220 loss 5.2140 ema 5.2205 lr 1.51e-04 tok/s 35.3k elapsed 279s
+step 1220/1220 loss 5.2923 ema 5.2230 lr 1.50e-04 tok/s 35.3k elapsed 284s
+{
+  "arch": "rev_mid",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.0015,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.222962423964763,
+  "final_val_loss": 5.304438249428823,
+  "val_ppl": 201.22793075259744,
+  "tokens_per_s": 35279.37504179208,
+  "peak_mem_allocated_mb": 1010.64697265625,
+  "peak_mem_reserved_mb": 1210.0,
+  "wall_s": 283.6622951030731,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== rev_mid lr=0.003 ===
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.003
+step 400/1220 loss 5.4917 ema 5.5081 lr 2.41e-03 tok/s 34.4k elapsed 96s
+step 800/1220 loss 5.3121 ema 5.3067 lr 1.05e-03 tok/s 33.6k elapsed 195s
+step 1200/1220 loss 5.1885 ema 5.1963 lr 3.02e-04 tok/s 32.6k elapsed 302s
+step 1220/1220 loss 5.2664 ema 5.1992 lr 3.00e-04 tok/s 32.5k elapsed 307s
+{
+  "arch": "rev_mid",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.003,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.199167147227702,
+  "final_val_loss": 5.2830169746586435,
+  "val_ppl": 196.96321288154817,
+  "tokens_per_s": 32543.467898503764,
+  "peak_mem_allocated_mb": 1010.64697265625,
+  "peak_mem_reserved_mb": 1210.0,
+  "wall_s": 307.4184775352478,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== rev_mid lr=0.006 ===
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.006
+step 400/1220 loss 5.5365 ema 5.5474 lr 4.82e-03 tok/s 34.8k elapsed 95s
+step 800/1220 loss 5.3265 ema 5.3232 lr 2.10e-03 tok/s 33.9k elapsed 193s
+step 1200/1220 loss 5.1892 ema 5.1938 lr 6.04e-04 tok/s 33.8k elapsed 291s
+step 1220/1220 loss 5.2658 ema 5.1955 lr 6.00e-04 tok/s 33.8k elapsed 296s
+{
+  "arch": "rev_mid",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.006,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.195470383953337,
+  "final_val_loss": 5.279506822518672,
+  "val_ppl": 196.2730540282744,
+  "tokens_per_s": 33823.09529212801,
+  "peak_mem_allocated_mb": 1010.64697265625,
+  "peak_mem_reserved_mb": 1210.0,
+  "wall_s": 295.81619000434875,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+=== baseline lr=0.003 ===
+arch=baseline params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.003
+step 400/1220 loss 5.8672 ema 5.8472 lr 2.41e-03 tok/s 50.5k elapsed 65s
+step 800/1220 loss 5.3849 ema 5.3658 lr 1.05e-03 tok/s 49.5k elapsed 133s
+step 1200/1220 loss 5.1072 ema 5.1214 lr 3.02e-04 tok/s 49.7k elapsed 198s
+step 1220/1220 loss 5.2375 ema 5.1148 lr 3.00e-04 tok/s 49.7k elapsed 202s
+{
+  "arch": "baseline",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.003,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.114833140737374,
+  "final_val_loss": 5.181223844908105,
+  "val_ppl": 177.900400317491,
+  "tokens_per_s": 49661.0259699164,
+  "peak_mem_allocated_mb": 2129.78369140625,
+  "peak_mem_reserved_mb": 2348.0,
+  "wall_s": 201.69725346565247,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+SWEEP2 DONE

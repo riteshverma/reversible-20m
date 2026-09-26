@@ -1,0 +1,29 @@
+{
+  "arch": "rev_mid",
+  "batch": 192,
+  "seq": 512,
+  "tokens_planned": 49938432,
+  "steps_planned": 508,
+  "steps_done": 12,
+  "tokens_done": 1179648,
+  "tokens": 1179648,
+  "steps": 12,
+  "lr": 0.0013,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 8.656761155029672,
+  "final_val_loss": null,
+  "val_ppl": null,
+  "tokens_per_s": 61502.79840911993,
+  "peak_mem_allocated_mb": 4501.8671875,
+  "peak_mem_reserved_mb": 5118.0,
+  "wall_s": 22.824329376220703,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234,
+  "stopped_reason": "throttled: 86C 1717MHz sw_thermal_slowdown=True",
+  "guard_samples_n": 12
+}

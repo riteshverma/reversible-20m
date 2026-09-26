@@ -1,0 +1,103 @@
+{
+ "reason": "throttled: 86C 1747MHz sw_thermal_slowdown=True",
+ "samples": [
+  {
+   "t": 0.0,
+   "temp": 67.0,
+   "clk": 1702.0,
+   "pwr": 27.05,
+   "sw_thermal": false
+  },
+  {
+   "t": 2.1,
+   "temp": 78.0,
+   "clk": 1830.0,
+   "pwr": 114.95,
+   "sw_thermal": false
+  },
+  {
+   "t": 4.1,
+   "temp": 80.0,
+   "clk": 1815.0,
+   "pwr": 114.86,
+   "sw_thermal": false
+  },
+  {
+   "t": 6.2,
+   "temp": 81.0,
+   "clk": 1852.0,
+   "pwr": 114.61,
+   "sw_thermal": false
+  },
+  {
+   "t": 8.2,
+   "temp": 82.0,
+   "clk": 1830.0,
+   "pwr": 114.79,
+   "sw_thermal": false
+  },
+  {
+   "t": 10.3,
+   "temp": 83.0,
+   "clk": 1792.0,
+   "pwr": 114.79,
+   "sw_thermal": false
+  },
+  {
+   "t": 12.3,
+   "temp": 83.0,
+   "clk": 1770.0,
+   "pwr": 114.77,
+   "sw_thermal": false
+  },
+  {
+   "t": 14.4,
+   "temp": 84.0,
+   "clk": 1822.0,
+   "pwr": 114.8,
+   "sw_thermal": false
+  },
+  {
+   "t": 16.4,
+   "temp": 85.0,
+   "clk": 1770.0,
+   "pwr": 114.73,
+   "sw_thermal": false
+  },
+  {
+   "t": 18.4,
+   "temp": 86.0,
+   "clk": 1792.0,
+   "pwr": 114.93,
+   "sw_thermal": false
+  },
+  {
+   "t": 20.5,
+   "temp": 86.0,
+   "clk": 1822.0,
+   "pwr": 114.87,
+   "sw_thermal": false
+  },
+  {
+   "t": 22.5,
+   "temp": 86.0,
+   "clk": 1785.0,
+   "pwr": 114.7,
+   "sw_thermal": false
+  },
+  {
+   "t": 24.6,
+   "temp": 87.0,
+   "clk": 1792.0,
+   "pwr": 114.69,
+   "sw_thermal": false
+  },
+  {
+   "t": 26.6,
+   "temp": 86.0,
+   "clk": 1747.0,
+   "pwr": 107.39,
+   "sw_thermal": true
+  }
+ ]
+}

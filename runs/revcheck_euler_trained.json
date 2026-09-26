@@ -1,0 +1,21 @@
+no-grad params (reversible path): []
+no-grad params (reference path): []
+{
+  "arch": "rev_euler",
+  "trained_steps": 300,
+  "bf16": true,
+  "loss_rev": 6.6084370613098145,
+  "loss_ref": 6.6084370613098145,
+  "recon_rel_err_per_layer": [
+    3175.43945312,
+    0.00256406,
+    0.00178566,
+    0.00141841,
+    0.00060642,
+    0.00045248
+  ],
+  "max_recon_rel_err": 3175.439453125,
+  "max_grad_rel_err": 1.8996598720550537,
+  "worst_param": "blocks.0.attn.qkv.weight",
+  "min_grad_cosine_sim": 0.7542638778686523
+}

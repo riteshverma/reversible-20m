@@ -1,0 +1,46 @@
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=6103 lr=0.00075
+step 10/6103 loss 8.3961 ema 8.9812 lr 6.15e-05 tok/s 61.5k elapsed 2s
+step 20/6103 loss 7.9846 ema 8.6429 lr 1.23e-04 tok/s 52.6k elapsed 4s
+step 30/6103 loss 7.5642 ema 8.2685 lr 1.84e-04 tok/s 51.1k elapsed 5s
+step 40/6103 loss 7.0845 ema 7.8744 lr 2.46e-04 tok/s 50.5k elapsed 7s
+step 50/6103 loss 6.9854 ema 7.5514 lr 3.07e-04 tok/s 50.1k elapsed 9s
+step 60/6103 loss 6.9594 ema 7.3093 lr 3.69e-04 tok/s 49.9k elapsed 10s
+step 70/6103 loss 6.8851 ema 7.1167 lr 4.30e-04 tok/s 49.7k elapsed 12s
+step 80/6103 loss 6.5366 ema 6.9277 lr 4.92e-04 tok/s 49.6k elapsed 14s
+step 90/6103 loss 6.4384 ema 6.7616 lr 5.53e-04 tok/s 49.5k elapsed 15s
+step 100/6103 loss 6.3321 ema 6.6056 lr 6.15e-04 tok/s 49.4k elapsed 17s
+step 110/6103 loss 6.2997 ema 6.4967 lr 6.76e-04 tok/s 49.3k elapsed 19s
+step 120/6103 loss 6.1869 ema 6.3753 lr 7.38e-04 tok/s 49.3k elapsed 20s
+step 130/6103 loss 6.1038 ema 6.2812 lr 7.50e-04 tok/s 49.2k elapsed 22s
+THERMAL GUARD: stopping at step 133/6103: throttled: 87C 1762MHz sw_thermal_slowdown=True
+{
+  "arch": "rev_mid",
+  "batch": 16,
+  "seq": 512,
+  "tokens_planned": 49995776,
+  "steps_planned": 6103,
+  "steps_done": 133,
+  "tokens_done": 1089536,
+  "tokens": 1089536,
+  "steps": 133,
+  "lr": 0.00075,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 6.2546816070329605,
+  "final_val_loss": null,
+  "val_ppl": null,
+  "tokens_per_s": 49171.6224545709,
+  "peak_mem_allocated_mb": 1156.53369140625,
+  "peak_mem_reserved_mb": 1482.0,
+  "wall_s": 22.62331199645996,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234,
+  "stopped_reason": "throttled: 87C 1762MHz sw_thermal_slowdown=True",
+  "guard_samples_n": 12
+}
+
+--- stderr ---

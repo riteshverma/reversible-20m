@@ -1,0 +1,96 @@
+
+>>> C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\python.exe train.py --arch rev_euler --batch 16 --lr 0.0015 --tokens 10000000.0 --out runs/s3_rev_euler_0.0015 --log-every 400
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.0015
+step 400/1220 loss 5.7333 ema 5.7296 lr 1.20e-03 tok/s 42.7k elapsed 77s
+step 800/1220 loss 5.2846 ema 5.2437 lr 5.26e-04 tok/s 39.7k elapsed 165s
+step 1200/1220 loss 5.0123 ema 5.0184 lr 1.51e-04 tok/s 37.3k elapsed 264s
+step 1220/1220 loss 5.1321 ema 5.0126 lr 1.50e-04 tok/s 37.2k elapsed 269s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.0015,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.012604745953163,
+  "final_val_loss": 5.081134302946951,
+  "val_ppl": 160.95652588257911,
+  "tokens_per_s": 37239.71307902528,
+  "peak_mem_allocated_mb": 1153.65869140625,
+  "peak_mem_reserved_mb": 1466.0,
+  "wall_s": 268.55257987976074,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+    -> rev_euler lr=0.0015: val 5.0811
+
+>>> C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\python.exe train.py --arch rev_euler --batch 16 --lr 0.003 --tokens 10000000.0 --out runs/s3_rev_euler_0.003 --log-every 400
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.003
+step 400/1220 loss 5.8970 ema 5.8723 lr 2.41e-03 tok/s 33.5k elapsed 98s
+step 800/1220 loss 5.4866 ema 5.4309 lr 1.05e-03 tok/s 32.7k elapsed 200s
+step 1200/1220 loss 5.1942 ema 5.2057 lr 3.02e-04 tok/s 32.1k elapsed 306s
+step 1220/1220 loss 5.3359 ema 5.2041 lr 3.00e-04 tok/s 32.0k elapsed 312s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.003,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.204111486130787,
+  "final_val_loss": 5.268572855166637,
+  "val_ppl": 194.13870060252805,
+  "tokens_per_s": 32024.521956106608,
+  "peak_mem_allocated_mb": 1153.65869140625,
+  "peak_mem_reserved_mb": 1466.0,
+  "wall_s": 312.310747385025,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+    -> rev_euler lr=0.003: val 5.2686
+
+>>> C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\python.exe train.py --arch rev_euler --batch 16 --lr 0.006 --tokens 10000000.0 --out runs/s3_rev_euler_0.006 --log-every 400
+arch=rev_euler params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.006
+step 400/1220 loss 6.3892 ema 6.3068 lr 4.82e-03 tok/s 32.0k elapsed 103s
+step 800/1220 loss 6.0629 ema 6.0194 lr 2.10e-03 tok/s 30.3k elapsed 217s
+step 1200/1220 loss 5.8186 ema 5.8470 lr 6.04e-04 tok/s 30.2k elapsed 325s
+step 1220/1220 loss 6.0026 ema 5.8443 lr 6.00e-04 tok/s 30.2k elapsed 331s
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.006,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.844275281364173,
+  "final_val_loss": 5.893695520243765,
+  "val_ppl": 362.74333579214283,
+  "tokens_per_s": 30233.739097543716,
+  "peak_mem_allocated_mb": 1153.65869140625,
+  "peak_mem_reserved_mb": 1466.0,
+  "wall_s": 330.96097469329834,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+    -> rev_euler lr=0.006: val 5.8937
+
+>>> C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\python.exe train.py --arch rev_mid --batch 16 --lr 0.003 --tokens 10000000.0 --out runs/s3_rev_mid_0.003 --log-every 400
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=16 seq=512 steps=1220 lr=0.003

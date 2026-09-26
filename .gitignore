@@ -1,0 +1,25 @@
+# --- data (regenerate with `python data_prep.py`) ---
+data/*.parquet
+data/*.bin
+data/*.npy
+
+# --- checkpoints ---
+*.pt
+*.ckpt
+runs/**/ckpt*
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- editors / os ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- superseded local scratch ---
+*.bak

@@ -1,0 +1,12 @@
+# Training / experiments (CUDA build of torch is installed separately, see README)
+torch>=2.5
+numpy>=1.26
+tokenizers>=0.20
+pyarrow>=16.0
+
+# Data fetch on Colab
+huggingface_hub>=0.24
+
+# Reporting / notebooks
+matplotlib>=3.8
+jupyter>=1.0

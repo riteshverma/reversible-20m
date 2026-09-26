@@ -1,0 +1,59 @@
+g1_baseline_b16: starting at 64C (cooled 15s)
+g1_baseline_b16: STOPPED_THERMAL at 2.0M tokens (throttled: 86C 1747MHz sw_thermal_slowdown=True)
+g2_rev_mid_b16: starting at 65C (cooled 60s)
+g2_rev_mid_b16: STOPPED_THERMAL at 1.1M tokens (throttled: 87C 1762MHz sw_thermal_slowdown=True)
+g3_rev_mid_b192: starting at 65C (cooled 60s)
+g3_rev_mid_b192: STOPPED_THERMAL at 1.2M tokens (throttled: 86C 1717MHz sw_thermal_slowdown=True)
+[
+  {
+    "run": "g1_baseline_b16",
+    "arch": "baseline",
+    "batch": 16,
+    "lr": 0.00075,
+    "start_temp_c": 64.0,
+    "cooldown_s": 15,
+    "status": "STOPPED_THERMAL",
+    "steps_done": 239,
+    "tokens_done": 1957888,
+    "tok_s_untill_stop": 74838.3037872757,
+    "wall_s": 26.655410289764404,
+    "stopped_reason": "throttled: 86C 1747MHz sw_thermal_slowdown=True",
+    "final_train_loss_ema": 5.811741759700178,
+    "max_temp_c": 87.0,
+    "min_clk_mhz": 1702.0
+  },
+  {
+    "run": "g2_rev_mid_b16",
+    "arch": "rev_mid",
+    "batch": 16,
+    "lr": 0.00075,
+    "start_temp_c": 65.0,
+    "cooldown_s": 60,
+    "status": "STOPPED_THERMAL",
+    "steps_done": 133,
+    "tokens_done": 1089536,
+    "tok_s_untill_stop": 49171.6224545709,
+    "wall_s": 22.62331199645996,
+    "stopped_reason": "throttled: 87C 1762MHz sw_thermal_slowdown=True",
+    "final_train_loss_ema": 6.2546816070329605,
+    "max_temp_c": 87.0,
+    "min_clk_mhz": 1702.0
+  },
+  {
+    "run": "g3_rev_mid_b192",
+    "arch": "rev_mid",
+    "batch": 192,
+    "lr": 0.0013,
+    "start_temp_c": 65.0,
+    "cooldown_s": 60,
+    "status": "STOPPED_THERMAL",
+    "steps_done": 12,
+    "tokens_done": 1179648,
+    "tok_s_untill_stop": 61502.79840911993,
+    "wall_s": 22.824329376220703,
+    "stopped_reason": "throttled: 86C 1717MHz sw_thermal_slowdown=True",
+    "final_train_loss_ema": 8.656761155029672,
+    "max_temp_c": 87.0,
+    "min_clk_mhz": 1702.0
+  }
+]

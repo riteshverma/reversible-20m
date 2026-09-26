@@ -1,0 +1,23 @@
+{
+  "arch": "rev_mid",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 5996544,
+  "steps": 732,
+  "lr": 0.006,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.273479827173139,
+  "final_val_loss": 5.354896213845968,
+  "val_ppl": 211.64200970277804,
+  "tokens_per_s": 33244.087948408385,
+  "peak_mem_allocated_mb": 1010.64697265625,
+  "peak_mem_reserved_mb": 1210.0,
+  "wall_s": 180.5570080280304,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}

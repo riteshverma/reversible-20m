@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Monisha Srivastava\.zcode\workspace\default\reversible-20m\speed_ab.py", line 55, in <module>
+    clk = torch.cuda.clock_rate() if hasattr(torch.cuda, "clock_rate") else None
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\cuda\__init__.py", line 1446, in clock_rate
+    handle = _get_pynvml_handler(device)
+  File "C:\Users\Monisha Srivastava\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\cuda\__init__.py", line 1227, in _get_pynvml_handler
+    raise ModuleNotFoundError(
+    ...<2 lines>...
+    ) from _PYNVML_ERR
+ModuleNotFoundError: nvidia-ml-py does not seem to be installed or it can't be imported.

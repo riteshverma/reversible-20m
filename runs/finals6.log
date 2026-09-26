@@ -1,0 +1,36 @@
+arch=rev_mid params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} batch=192 seq=512 steps=508 lr=0.00065
+step 50/508 loss 6.3265 ema 6.9830 lr 6.48e-04 tok/s 38.4k elapsed 130s
+step 100/508 loss 5.5124 ema 5.8052 lr 6.20e-04 tok/s 36.1k elapsed 273s
+step 150/508 loss 5.0734 ema 5.2532 lr 5.65e-04 tok/s 35.8k elapsed 412s
+step 200/508 loss 4.9068 ema 4.9680 lr 4.87e-04 tok/s 35.7k elapsed 552s
+step 250/508 loss 4.7035 ema 4.7711 lr 3.96e-04 tok/s 35.3k elapsed 697s
+step 300/508 loss 4.5924 ema 4.6336 lr 3.00e-04 tok/s 35.0k elapsed 842s
+step 350/508 loss 4.5409 ema 4.5356 lr 2.11e-04 tok/s 34.7k elapsed 992s
+step 400/508 loss 4.4224 ema 4.4580 lr 1.37e-04 tok/s 34.5k elapsed 1141s
+step 450/508 loss 4.4001 ema 4.4066 lr 8.67e-05 tok/s 34.3k elapsed 1289s
+step 500/508 loss 4.3813 ema 4.3768 lr 6.55e-05 tok/s 34.2k elapsed 1435s
+step 508/508 loss 4.3661 ema 4.3731 lr 6.50e-05 tok/s 34.2k elapsed 1459s
+{
+  "arch": "rev_mid",
+  "batch": 192,
+  "seq": 512,
+  "tokens": 49938432,
+  "steps": 508,
+  "lr": 0.00065,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 4.373127664842589,
+  "final_val_loss": 4.469143542764862,
+  "val_ppl": 87.28193774574139,
+  "tokens_per_s": 34230.46342177034,
+  "peak_mem_allocated_mb": 4501.8671875,
+  "peak_mem_reserved_mb": 5118.0,
+  "wall_s": 1458.877253293991,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}
+FINALS6 DONE

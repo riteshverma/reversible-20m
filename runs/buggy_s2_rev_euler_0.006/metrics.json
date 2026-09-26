@@ -1,0 +1,23 @@
+{
+  "arch": "rev_euler",
+  "batch": 16,
+  "seq": 512,
+  "tokens": 9994240,
+  "steps": 1220,
+  "lr": 0.006,
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "final_train_loss_ema": 5.17989071235393,
+  "final_val_loss": 5.267421228972326,
+  "val_ppl": 193.9152540777156,
+  "tokens_per_s": 37879.57019683199,
+  "peak_mem_allocated_mb": 1009.64697265625,
+  "peak_mem_reserved_mb": 1194.0,
+  "wall_s": 264.3166301250458,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.10.0+cu126",
+  "seed": 1234
+}

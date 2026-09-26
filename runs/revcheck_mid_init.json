@@ -1,0 +1,21 @@
+no-grad params (reversible path): []
+no-grad params (reference path): []
+{
+  "arch": "rev_mid",
+  "trained_steps": 0,
+  "bf16": true,
+  "loss_rev": 9.092337608337402,
+  "loss_ref": 9.092337608337402,
+  "recon_rel_err_per_layer": [
+    20446777344.0,
+    0.0646767,
+    0.01215403,
+    0.00414261,
+    0.00223545,
+    9e-08
+  ],
+  "max_recon_rel_err": 20446777344.0,
+  "max_grad_rel_err": 0.018633540719747543,
+  "worst_param": "blocks.0.mlp.fc.weight",
+  "min_grad_cosine_sim": 0.9996969103813171
+}
