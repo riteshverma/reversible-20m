@@ -1,0 +1,157 @@
+optimizer state copied for 38 tensors; fresh: ['blocks.0.mlp.router.weight', 'blocks.1.mlp.router.weight', 'blocks.2.mlp.router.weight', 'blocks.3.mlp.router.weight', 'blocks.4.mlp.router.weight', 'blocks.5.mlp.router.weight']
+resume at step 2441: dense ckpt val 4.15564 | moe_8x_top2 val 4.15563 (delta -1.52e-05)
+arm=moe_8x_top2 params={'total': 111180288, 'embedding': 4194304, 'non_embedding': 106985984, 'active_per_token': 35682816} steps 2441->6103 of 6103 lr=0.00075
+step 2500/6103 ce 4.1508 ema 4.0634 lr 5.19e-04 tok/s 29.2k elapsed 17s aux 1.011 max-load/layer 0.15 0.15 0.15 0.20 0.15 0.17
+  eval step 2500 tokens 20.5M val 4.1444
+step 2600/6103 ce 4.0131 ema 4.0560 lr 5.02e-04 tok/s 24.8k elapsed 53s aux 1.012 max-load/layer 0.23 0.16 0.16 0.15 0.14 0.15
+step 2700/6103 ce 3.9624 ema 4.0324 lr 4.85e-04 tok/s 26.1k elapsed 81s aux 1.007 max-load/layer 0.15 0.14 0.16 0.15 0.17 0.16
+  eval step 2750 tokens 22.5M val 4.1165
+step 2800/6103 ce 4.1577 ema 4.0170 lr 4.68e-04 tok/s 25.2k elapsed 117s aux 1.006 max-load/layer 0.18 0.14 0.16 0.14 0.14 0.16
+step 2900/6103 ce 3.9946 ema 3.9909 lr 4.50e-04 tok/s 25.9k elapsed 145s aux 1.006 max-load/layer 0.16 0.15 0.16 0.15 0.15 0.16
+step 3000/6103 ce 4.0496 ema 3.9785 lr 4.33e-04 tok/s 26.3k elapsed 174s aux 1.010 max-load/layer 0.19 0.16 0.16 0.15 0.14 0.17
+  eval step 3000 tokens 24.6M val 4.0695
+step 3100/6103 ce 3.9590 ema 3.9718 lr 4.15e-04 tok/s 25.7k elapsed 210s aux 1.009 max-load/layer 0.17 0.16 0.15 0.16 0.14 0.16
+step 3200/6103 ce 3.9020 ema 3.9096 lr 3.97e-04 tok/s 26.0k elapsed 239s aux 1.005 max-load/layer 0.15 0.14 0.14 0.15 0.15 0.15
+  eval step 3250 tokens 26.6M val 4.0215
+step 3300/6103 ce 3.9231 ema 3.9093 lr 3.79e-04 tok/s 25.6k elapsed 275s aux 1.008 max-load/layer 0.15 0.14 0.14 0.15 0.18 0.15
+step 3400/6103 ce 3.9386 ema 3.9008 lr 3.62e-04 tok/s 25.9k elapsed 304s aux 1.008 max-load/layer 0.16 0.16 0.15 0.14 0.16 0.17
+step 3500/6103 ce 3.9358 ema 3.8581 lr 3.44e-04 tok/s 26.1k elapsed 333s aux 1.007 max-load/layer 0.17 0.16 0.15 0.14 0.16 0.16
+  eval step 3500 tokens 28.7M val 3.9779
+step 3600/6103 ce 3.9467 ema 3.8695 lr 3.27e-04 tok/s 25.8k elapsed 368s aux 1.006 max-load/layer 0.17 0.13 0.15 0.15 0.14 0.17
+step 3700/6103 ce 3.8244 ema 3.8250 lr 3.10e-04 tok/s 26.0k elapsed 397s aux 1.005 max-load/layer 0.18 0.15 0.14 0.14 0.14 0.15
+  eval step 3750 tokens 30.7M val 3.9406
+step 3800/6103 ce 3.8967 ema 3.8452 lr 2.93e-04 tok/s 25.7k elapsed 433s aux 1.006 max-load/layer 0.17 0.15 0.15 0.14 0.15 0.14
+step 3900/6103 ce 3.7345 ema 3.7887 lr 2.77e-04 tok/s 25.9k elapsed 462s aux 1.005 max-load/layer 0.17 0.14 0.14 0.15 0.15 0.15
+step 4000/6103 ce 4.0355 ema 3.7879 lr 2.61e-04 tok/s 26.0k elapsed 491s aux 1.005 max-load/layer 0.16 0.15 0.14 0.14 0.14 0.14
+  eval step 4000 tokens 32.8M val 3.9037
+step 4100/6103 ce 3.7599 ema 3.7610 lr 2.45e-04 tok/s 25.8k elapsed 526s aux 1.002 max-load/layer 0.14 0.14 0.14 0.15 0.15 0.14
+step 4200/6103 ce 3.7182 ema 3.7527 lr 2.30e-04 tok/s 26.0k elapsed 555s aux 1.003 max-load/layer 0.16 0.15 0.15 0.14 0.14 0.14
+  eval step 4250 tokens 34.8M val 3.8714
+step 4300/6103 ce 3.6335 ema 3.7417 lr 2.16e-04 tok/s 25.8k elapsed 590s aux 1.004 max-load/layer 0.15 0.14 0.15 0.14 0.15 0.15
+step 4400/6103 ce 3.7502 ema 3.7272 lr 2.01e-04 tok/s 26.0k elapsed 618s aux 1.004 max-load/layer 0.16 0.14 0.14 0.14 0.14 0.14
+step 4500/6103 ce 3.7030 ema 3.6807 lr 1.88e-04 tok/s 26.1k elapsed 647s aux 1.005 max-load/layer 0.15 0.15 0.14 0.14 0.16 0.17
+  eval step 4500 tokens 36.9M val 3.8402
+step 4600/6103 ce 3.8167 ema 3.7270 lr 1.75e-04 tok/s 25.9k elapsed 683s aux 1.004 max-load/layer 0.15 0.14 0.16 0.14 0.15 0.15
+step 4700/6103 ce 3.5286 ema 3.6669 lr 1.63e-04 tok/s 26.0k elapsed 712s aux 1.005 max-load/layer 0.15 0.14 0.15 0.15 0.14 0.14
+  eval step 4750 tokens 38.9M val 3.8160
+step 4800/6103 ce 3.6607 ema 3.6771 lr 1.51e-04 tok/s 25.9k elapsed 748s aux 1.004 max-load/layer 0.15 0.16 0.15 0.14 0.15 0.14
+step 4900/6103 ce 3.4475 ema 3.6795 lr 1.40e-04 tok/s 25.9k elapsed 776s aux 1.003 max-load/layer 0.15 0.14 0.15 0.14 0.15 0.16
+step 5000/6103 ce 3.7554 ema 3.6320 lr 1.30e-04 tok/s 26.0k elapsed 805s aux 1.004 max-load/layer 0.14 0.14 0.14 0.14 0.14 0.15
+  eval step 5000 tokens 41.0M val 3.7933
+step 5100/6103 ce 3.5569 ema 3.6270 lr 1.21e-04 tok/s 25.9k elapsed 841s aux 1.006 max-load/layer 0.17 0.14 0.14 0.13 0.16 0.15
+step 5200/6103 ce 3.4966 ema 3.6386 lr 1.12e-04 tok/s 26.0k elapsed 870s aux 1.006 max-load/layer 0.14 0.14 0.14 0.15 0.14 0.14
+  eval step 5250 tokens 43.0M val 3.7741
+step 5300/6103 ce 3.6374 ema 3.6092 lr 1.05e-04 tok/s 25.9k elapsed 906s aux 1.006 max-load/layer 0.18 0.13 0.14 0.13 0.16 0.14
+step 5400/6103 ce 3.6394 ema 3.6214 lr 9.78e-05 tok/s 25.9k elapsed 935s aux 1.008 max-load/layer 0.16 0.14 0.14 0.13 0.15 0.14
+step 5500/6103 ce 3.4709 ema 3.6108 lr 9.18e-05 tok/s 26.0k elapsed 963s aux 1.003 max-load/layer 0.15 0.14 0.14 0.14 0.14 0.14
+  eval step 5500 tokens 45.1M val 3.7607
+step 5600/6103 ce 3.5087 ema 3.6108 lr 8.68e-05 tok/s 25.9k elapsed 999s aux 1.005 max-load/layer 0.15 0.14 0.14 0.14 0.14 0.16
+step 5700/6103 ce 3.4959 ema 3.5974 lr 8.26e-05 tok/s 26.0k elapsed 1028s aux 1.006 max-load/layer 0.16 0.13 0.14 0.14 0.15 0.15
+  eval step 5750 tokens 47.1M val 3.7471
+step 5800/6103 ce 3.5263 ema 3.5895 lr 7.93e-05 tok/s 25.9k elapsed 1063s aux 1.006 max-load/layer 0.15 0.14 0.13 0.14 0.15 0.15
+step 5900/6103 ce 3.5474 ema 3.5789 lr 7.69e-05 tok/s 26.0k elapsed 1092s aux 1.006 max-load/layer 0.15 0.14 0.15 0.14 0.14 0.15
+step 6000/6103 ce 3.6714 ema 3.5914 lr 7.55e-05 tok/s 26.0k elapsed 1120s aux 1.005 max-load/layer 0.15 0.14 0.14 0.14 0.15 0.15
+  eval step 6000 tokens 49.2M val 3.7359
+step 6100/6103 ce 3.3555 ema 3.5723 lr 7.50e-05 tok/s 25.9k elapsed 1156s aux 1.003 max-load/layer 0.15 0.14 0.14 0.13 0.15 0.14
+step 6103/6103 ce 3.6053 ema 3.5721 lr 7.50e-05 tok/s 25.9k elapsed 1157s aux 1.002 max-load/layer 0.15 0.14 0.14 0.14 0.13 0.14
+  eval step 6103 tokens 50.0M val 3.7330
+{
+  "arm": "moe_8x_top2",
+  "params": {
+    "total": 111180288,
+    "embedding": 4194304,
+    "non_embedding": 106985984,
+    "active_per_token": 35682816
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 2441,
+  "end_step": 6103,
+  "steps_total": 6103,
+  "tokens_start": 19996672,
+  "tokens_end": 49995776,
+  "final_train_ce_ema": 3.5721242732279097,
+  "final_val_loss_2M": 3.735510870058965,
+  "val_ppl": 41.90943036826358,
+  "tokens_per_s": 25770.3051025096,
+  "wall_s": 1164.5722200870514,
+  "peak_mem_allocated_mb": 4260.931640625,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "val_at_resume_dense_ckpt": 4.155643361513732,
+  "val_at_resume_this_model": 4.155628184803197,
+  "experts": 8,
+  "topk": 2,
+  "aux_coef": 0.1,
+  "router_std": 0.02,
+  "expert_divergence_per_layer": [
+    0.33713099360466003,
+    0.4315927028656006,
+    0.4121459126472473,
+    0.41015979647636414,
+    0.39797578752040863,
+    0.3673284649848938
+  ],
+  "final_expert_load": [
+    [
+      0.09130859375,
+      0.0927734375,
+      0.1162109375,
+      0.1806640625,
+      0.07080078125,
+      0.16259765625,
+      0.236328125,
+      0.04931640625
+    ],
+    [
+      0.119140625,
+      0.1455078125,
+      0.1630859375,
+      0.08154296875,
+      0.14404296875,
+      0.08544921875,
+      0.146484375,
+      0.11474609375
+    ],
+    [
+      0.12646484375,
+      0.09326171875,
+      0.10107421875,
+      0.15283203125,
+      0.12060546875,
+      0.11376953125,
+      0.12255859375,
+      0.16943359375
+    ],
+    [
+      0.12744140625,
+      0.11865234375,
+      0.115234375,
+      0.14208984375,
+      0.123046875,
+      0.1083984375,
+      0.1357421875,
+      0.12939453125
+    ],
+    [
+      0.12646484375,
+      0.1767578125,
+      0.0673828125,
+      0.07275390625,
+      0.201171875,
+      0.10205078125,
+      0.0849609375,
+      0.16845703125
+    ],
+    [
+      0.138671875,
+      0.1640625,
+      0.14208984375,
+      0.1337890625,
+      0.05322265625,
+      0.1669921875,
+      0.134765625,
+      0.06640625
+    ]
+  ]
+}

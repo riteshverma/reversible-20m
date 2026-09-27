@@ -66,7 +66,7 @@ def transfer_opt_state(opt, moe, dense_names, dense_opt_sd, n_experts):
         for k, v in s.items():
             if torch.is_tensor(v) and v.ndim > 0 and v.shape != p.shape:
                 v = v.unsqueeze(0).expand(n_experts, *v.shape)
-            st[k] = v.clone().contiguous() if torch.is_tensor(v) else v
+            st[k] = v.to(p.device).contiguous() if torch.is_tensor(v) else v
         opt.state[p] = st
         copied += 1
     return copied, fresh
@@ -104,7 +104,8 @@ def train_segment(model, opt, train_mm, val_mm, g, args, start, end, steps, warm
                    f"tok/s {tps/1e3:.1f}k elapsed {time.time()-t0:.0f}s")
             if is_moe:
                 ld = model.expert_load()
-                msg += f" aux {aux.item():.3f} load[min {ld.min().item():.3f} max {ld.max().item():.3f}]"
+                msg += (f" aux {aux.item():.3f} max-load/layer "
+                        + " ".join(f"{v:.2f}" for v in ld.max(1).values.tolist()))
             log(msg)
         if (step + 1) % args.eval_every == 0 or step == end - 1:
             v = evaluate(model, val_mm, args.seq, "cuda", max_tokens=args.eval_tokens)
@@ -162,7 +163,9 @@ def main():
         start, end = 0, int(args.stop_tokens // (args.batch * args.seq))
         arm = "dense_phase1"
     else:
-        ck = torch.load(args.init, map_location="cuda", weights_only=False)
+        # load on CPU: the MoE needs most of a 6 GB card, so the checkpoint must not
+        # stay resident on the GPU for the whole run
+        ck = torch.load(args.init, map_location="cpu", weights_only=False)
         torch.manual_seed(args.seed + 1)
         dense = GPTBaseline(VOCAB, seq=args.seq).cuda()
         dense.load_state_dict(ck["model"])
@@ -183,6 +186,8 @@ def main():
             copied, fresh = transfer_opt_state(opt, model, ck["opt_names"], ck["opt"], args.experts)
             log(f"optimizer state copied for {copied} tensors; fresh: {fresh}")
             arm = f"moe_{args.experts}x_top{args.topk}"
+        del ck
+        torch.cuda.empty_cache()
         v0 = evaluate(model, val_mm, args.seq, "cuda", max_tokens=args.eval_tokens)
         info = {"val_at_resume_dense_ckpt": v_dense, "val_at_resume_this_model": v0}
         log(f"resume at step {start}: dense ckpt val {v_dense:.5f} | {arm} val {v0:.5f} "

@@ -66,6 +66,33 @@ The two runs agree to within 0.001, which also exercises the fp16 path. Layer 0 
 unbalanced on the T4 too, with one expert taking 50% of routed slots, so the imbalance is
 systematic rather than seed noise.
 
+## Stronger load balancing
+
+With a coefficient of 0.01, layer 0 ends badly unbalanced: one expert takes 50% of routed
+slots and two take under 1%, where an even split is 12.5%. The MoE continuation was
+re-run from the same dense checkpoint with coefficients 0.05 and 0.1
+(`upcycle_aux_sweep.sh`, `runs/up_moe8x2_aux*`).
+
+![aux sweep](curves_aux_sweep.png)
+
+| balancing coefficient | final val loss (2M tokens) | vs dense | layer-0 busiest expert | busiest expert, any layer | least-used expert |
+|---|---|---|---|---|---|
+| 0.01 | 3.7345 | −0.0455 | 0.500 | 0.500 | 0.004 |
+| 0.05 | 3.7366 | −0.0434 | 0.289 | 0.289 | 0.037 |
+| 0.1 | 3.7355 | −0.0445 | 0.236 | 0.236 | 0.049 |
+
+- **Balance improves a lot.** At 0.1, the busiest expert in layer 0 drops from 50% to 24%
+  of routed slots, and no expert in any layer falls below 4.9%. All experts are now in
+  use.
+- **Quality is unchanged.** The three final losses lie within 0.002 of each other, which
+  is below run-to-run noise: the local and T4 runs of the same setup differed by 0.001.
+- **The gain arrives later.** A stronger balancing loss holds the MoE behind the dense
+  control for longer after conversion: it drops below dense at about 26–28M tokens
+  instead of about 25M. It catches up by about 45M tokens.
+- **Recommendation: use 0.1 as the default.** It gives the same final loss with every
+  expert in use, which matters for expert-parallel throughput and for any later pruning
+  or merging of experts.
+
 ## Caveats
 
 - **Not compute-matched.** Top-2 routing doubles the MLP compute per token, and the MoE
