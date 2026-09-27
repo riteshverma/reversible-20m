@@ -1,0 +1,138 @@
+optimizer state copied for 38 tensors; fresh: ['blocks.0.mlp.router.weight', 'blocks.1.mlp.router.weight', 'blocks.2.mlp.router.weight', 'blocks.3.mlp.router.weight', 'blocks.4.mlp.router.weight', 'blocks.5.mlp.router.weight']
+resume at step 2441: dense ckpt val 4.15651 | moe_8x_top2 val 4.15652 (delta +1.28e-05)
+arm=moe_8x_top2 params={'total': 111180288, 'embedding': 4194304, 'non_embedding': 106985984, 'active_per_token': 35682816} steps 2441->6103 of 6103 lr=0.00075
+  eval step 2500 tokens 20.5M val 4.1459
+step 2600/6103 ce 4.0006 ema 4.0524 lr 5.02e-04 tok/s 7.4k elapsed 175s aux 1.062 load[min 0.048 max 0.342]
+  eval step 2750 tokens 22.5M val 4.1100
+step 2800/6103 ce 4.1403 ema 4.0070 lr 4.68e-04 tok/s 7.5k elapsed 390s aux 1.252 load[min 0.032 max 0.500]
+step 3000/6103 ce 4.0449 ema 3.9673 lr 4.33e-04 tok/s 7.8k elapsed 586s aux 1.321 load[min 0.016 max 0.500]
+  eval step 3000 tokens 24.6M val 4.0597
+step 3200/6103 ce 3.8856 ema 3.9002 lr 3.97e-04 tok/s 7.8k elapsed 801s aux 1.290 load[min 0.029 max 0.500]
+  eval step 3250 tokens 26.6M val 4.0120
+step 3400/6103 ce 3.9361 ema 3.8922 lr 3.62e-04 tok/s 7.7k elapsed 1016s aux 1.307 load[min 0.027 max 0.500]
+  eval step 3500 tokens 28.7M val 3.9684
+step 3600/6103 ce 3.9442 ema 3.8627 lr 3.27e-04 tok/s 7.7k elapsed 1231s aux 1.294 load[min 0.035 max 0.500]
+  eval step 3750 tokens 30.7M val 3.9327
+step 3800/6103 ce 3.8907 ema 3.8399 lr 2.93e-04 tok/s 7.7k elapsed 1446s aux 1.270 load[min 0.025 max 0.500]
+step 4000/6103 ce 4.0365 ema 3.7820 lr 2.61e-04 tok/s 7.8k elapsed 1641s aux 1.258 load[min 0.031 max 0.500]
+  eval step 4000 tokens 32.8M val 3.8985
+step 4200/6103 ce 3.7225 ema 3.7487 lr 2.30e-04 tok/s 7.8k elapsed 1857s aux 1.246 load[min 0.026 max 0.500]
+  eval step 4250 tokens 34.8M val 3.8653
+step 4400/6103 ce 3.7541 ema 3.7250 lr 2.01e-04 tok/s 7.7k elapsed 2072s aux 1.243 load[min 0.031 max 0.500]
+  eval step 4500 tokens 36.9M val 3.8366
+step 4600/6103 ce 3.8145 ema 3.7238 lr 1.75e-04 tok/s 7.7k elapsed 2287s aux 1.231 load[min 0.025 max 0.500]
+  eval step 4750 tokens 38.9M val 3.8123
+step 4800/6103 ce 3.6648 ema 3.6763 lr 1.51e-04 tok/s 7.7k elapsed 2502s aux 1.219 load[min 0.036 max 0.500]
+step 5000/6103 ce 3.7581 ema 3.6311 lr 1.30e-04 tok/s 7.8k elapsed 2697s aux 1.198 load[min 0.023 max 0.500]
+  eval step 5000 tokens 41.0M val 3.7906
+step 5200/6103 ce 3.4926 ema 3.6379 lr 1.12e-04 tok/s 7.8k elapsed 2912s aux 1.184 load[min 0.014 max 0.500]
+  eval step 5250 tokens 43.0M val 3.7715
+step 5400/6103 ce 3.6520 ema 3.6226 lr 9.78e-05 tok/s 7.8k elapsed 3127s aux 1.167 load[min 0.022 max 0.500]
+  eval step 5500 tokens 45.1M val 3.7595
+step 5600/6103 ce 3.5082 ema 3.6125 lr 8.68e-05 tok/s 7.7k elapsed 3342s aux 1.178 load[min 0.023 max 0.500]
+  eval step 5750 tokens 47.1M val 3.7463
+step 5800/6103 ce 3.5241 ema 3.5903 lr 7.93e-05 tok/s 7.7k elapsed 3557s aux 1.161 load[min 0.016 max 0.500]
+step 6000/6103 ce 3.6624 ema 3.5921 lr 7.55e-05 tok/s 7.8k elapsed 3753s aux 1.147 load[min 0.019 max 0.500]
+  eval step 6000 tokens 49.2M val 3.7359
+step 6103/6103 ce 3.6149 ema 3.5722 lr 7.50e-05 tok/s 7.7k elapsed 3873s aux 1.158 load[min 0.023 max 0.500]
+  eval step 6103 tokens 50.0M val 3.7329
+{
+  "arm": "moe_8x_top2",
+  "params": {
+    "total": 111180288,
+    "embedding": 4194304,
+    "non_embedding": 106985984,
+    "active_per_token": 35682816
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 2441,
+  "end_step": 6103,
+  "steps_total": 6103,
+  "tokens_start": 19996672,
+  "tokens_end": 49995776,
+  "final_train_ce_ema": 3.572217727849681,
+  "final_val_loss_2M": 3.735351876484939,
+  "val_ppl": 41.902767567829194,
+  "tokens_per_s": 7707.366665860791,
+  "wall_s": 3892.951179742813,
+  "peak_mem_allocated_mb": 5344.87451171875,
+  "gpu": "Tesla T4",
+  "val_at_resume_dense_ckpt": 4.156509202034747,
+  "val_at_resume_this_model": 4.156522045370008,
+  "experts": 8,
+  "topk": 2,
+  "aux_coef": 0.01,
+  "router_std": 0.02,
+  "expert_divergence_per_layer": [
+    0.39253591001033783,
+    0.4284374415874481,
+    0.4137013852596283,
+    0.4104382395744324,
+    0.40212348103523254,
+    0.37248148024082184
+  ],
+  "final_expert_load": [
+    [
+      0.04248046875,
+      0.02001953125,
+      0.02001953125,
+      0.49951171875,
+      0.05126953125,
+      0.07763671875,
+      0.21240234375,
+      0.07666015625
+    ],
+    [
+      0.10986328125,
+      0.20654296875,
+      0.1435546875,
+      0.0634765625,
+      0.0927734375,
+      0.10302734375,
+      0.15234375,
+      0.12841796875
+    ],
+    [
+      0.1357421875,
+      0.146484375,
+      0.07763671875,
+      0.1142578125,
+      0.10888671875,
+      0.12841796875,
+      0.138671875,
+      0.14990234375
+    ],
+    [
+      0.12744140625,
+      0.11767578125,
+      0.1318359375,
+      0.11865234375,
+      0.10693359375,
+      0.119140625,
+      0.1376953125,
+      0.140625
+    ],
+    [
+      0.083984375,
+      0.16015625,
+      0.05078125,
+      0.072265625,
+      0.220703125,
+      0.08349609375,
+      0.107421875,
+      0.22119140625
+    ],
+    [
+      0.15380859375,
+      0.18359375,
+      0.06201171875,
+      0.1826171875,
+      0.0673828125,
+      0.0771484375,
+      0.08447265625,
+      0.18896484375
+    ]
+  ]
+}

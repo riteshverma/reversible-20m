@@ -1,0 +1,62 @@
+resume at step 2441: dense ckpt val 4.15651 | dense_continue val 4.15651 (delta +0.00e+00)
+arm=dense_continue params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} steps 2441->6103 of 6103 lr=0.00075
+  eval step 2500 tokens 20.5M val 4.1580
+step 2600/6103 ce 3.9902 ema 4.0442 lr 5.02e-04 tok/s 11.4k elapsed 114s
+  eval step 2750 tokens 22.5M val 4.1038
+step 2800/6103 ce 4.1425 ema 4.0030 lr 4.68e-04 tok/s 11.5k elapsed 254s
+step 3000/6103 ce 4.0467 ema 3.9709 lr 4.33e-04 tok/s 12.0k elapsed 381s
+  eval step 3000 tokens 24.6M val 4.0600
+step 3200/6103 ce 3.8895 ema 3.9085 lr 3.97e-04 tok/s 11.9k elapsed 521s
+  eval step 3250 tokens 26.6M val 4.0183
+step 3400/6103 ce 3.9509 ema 3.9056 lr 3.62e-04 tok/s 11.9k elapsed 661s
+  eval step 3500 tokens 28.7M val 3.9809
+step 3600/6103 ce 3.9611 ema 3.8819 lr 3.27e-04 tok/s 11.9k elapsed 801s
+  eval step 3750 tokens 30.7M val 3.9500
+step 3800/6103 ce 3.9166 ema 3.8685 lr 2.93e-04 tok/s 11.8k elapsed 941s
+step 4000/6103 ce 4.0685 ema 3.8155 lr 2.61e-04 tok/s 12.0k elapsed 1067s
+  eval step 4000 tokens 32.8M val 3.9210
+step 4200/6103 ce 3.7669 ema 3.7874 lr 2.30e-04 tok/s 11.9k elapsed 1207s
+  eval step 4250 tokens 34.8M val 3.8923
+step 4400/6103 ce 3.7892 ema 3.7674 lr 2.01e-04 tok/s 11.9k elapsed 1347s
+  eval step 4500 tokens 36.9M val 3.8672
+step 4600/6103 ce 3.8641 ema 3.7710 lr 1.75e-04 tok/s 11.9k elapsed 1487s
+  eval step 4750 tokens 38.9M val 3.8469
+step 4800/6103 ce 3.7212 ema 3.7274 lr 1.51e-04 tok/s 11.9k elapsed 1627s
+step 5000/6103 ce 3.8038 ema 3.6872 lr 1.30e-04 tok/s 12.0k elapsed 1754s
+  eval step 5000 tokens 41.0M val 3.8270
+step 5200/6103 ce 3.5455 ema 3.6983 lr 1.12e-04 tok/s 11.9k elapsed 1894s
+  eval step 5250 tokens 43.0M val 3.8110
+step 5400/6103 ce 3.7199 ema 3.6856 lr 9.78e-05 tok/s 11.9k elapsed 2034s
+  eval step 5500 tokens 45.1M val 3.8007
+step 5600/6103 ce 3.5757 ema 3.6782 lr 8.68e-05 tok/s 11.9k elapsed 2174s
+  eval step 5750 tokens 47.1M val 3.7892
+step 5800/6103 ce 3.6043 ema 3.6580 lr 7.93e-05 tok/s 11.9k elapsed 2314s
+step 6000/6103 ce 3.7292 ema 3.6631 lr 7.55e-05 tok/s 11.9k elapsed 2441s
+  eval step 6000 tokens 49.2M val 3.7805
+step 6103/6103 ce 3.6879 ema 3.6443 lr 7.50e-05 tok/s 11.9k elapsed 2519s
+  eval step 6103 tokens 50.0M val 3.7776
+{
+  "arm": "dense_continue",
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 2441,
+  "end_step": 6103,
+  "steps_total": 6103,
+  "tokens_start": 19996672,
+  "tokens_end": 49995776,
+  "final_train_ce_ema": 3.6442752215996497,
+  "final_val_loss_2M": 3.7797720955996654,
+  "val_ppl": 43.80605700468246,
+  "tokens_per_s": 11846.849899049303,
+  "wall_s": 2532.6730666160583,
+  "peak_mem_allocated_mb": 3030.31396484375,
+  "gpu": "Tesla T4",
+  "val_at_resume_dense_ckpt": 4.156509202034747,
+  "val_at_resume_this_model": 4.156509202034747
+}

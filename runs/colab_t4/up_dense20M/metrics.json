@@ -1,0 +1,23 @@
+{
+  "arm": "dense_phase1",
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 0,
+  "end_step": 2441,
+  "steps_total": 6103,
+  "tokens_start": 0,
+  "tokens_end": 19996672,
+  "final_train_ce_ema": 4.067602544367369,
+  "final_val_loss_2M": 4.1597328872114225,
+  "val_ppl": 64.05441056239033,
+  "tokens_per_s": 11925.777297983934,
+  "wall_s": 1677.3363063335419,
+  "peak_mem_allocated_mb": 2936.28369140625,
+  "gpu": "Tesla T4"
+}

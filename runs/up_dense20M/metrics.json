@@ -1,0 +1,23 @@
+{
+  "arm": "dense_phase1",
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 0,
+  "end_step": 2441,
+  "steps_total": 6103,
+  "tokens_start": 0,
+  "tokens_end": 19996672,
+  "final_train_ce_ema": 4.0685526913354435,
+  "final_val_loss_2M": 4.1593430243695755,
+  "val_ppl": 64.02944299513524,
+  "tokens_per_s": 21023.424276707105,
+  "wall_s": 950.1495273113251,
+  "peak_mem_allocated_mb": 2129.78369140625,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+}

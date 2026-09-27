@@ -1,0 +1,157 @@
+optimizer state copied for 38 tensors; fresh: ['blocks.0.mlp.router.weight', 'blocks.1.mlp.router.weight', 'blocks.2.mlp.router.weight', 'blocks.3.mlp.router.weight', 'blocks.4.mlp.router.weight', 'blocks.5.mlp.router.weight']
+resume at step 2441: dense ckpt val 4.15564 | moe_8x_top2 val 4.15563 (delta -1.52e-05)
+arm=moe_8x_top2 params={'total': 111180288, 'embedding': 4194304, 'non_embedding': 106985984, 'active_per_token': 35682816} steps 2441->6103 of 6103 lr=0.00075
+step 2500/6103 ce 4.1492 ema 4.0633 lr 5.19e-04 tok/s 29.2k elapsed 17s aux 1.052 load[min 0.054 max 0.300]
+  eval step 2500 tokens 20.5M val 4.1462
+step 2600/6103 ce 4.0123 ema 4.0539 lr 5.02e-04 tok/s 25.0k elapsed 52s aux 1.066 load[min 0.032 max 0.326]
+step 2700/6103 ce 3.9617 ema 4.0253 lr 4.85e-04 tok/s 26.3k elapsed 81s aux 1.139 load[min 0.020 max 0.496]
+  eval step 2750 tokens 22.5M val 4.1094
+step 2800/6103 ce 4.1491 ema 4.0091 lr 4.68e-04 tok/s 25.9k elapsed 113s aux 1.203 load[min 0.017 max 0.500]
+step 2900/6103 ce 3.9816 ema 3.9820 lr 4.50e-04 tok/s 26.6k elapsed 142s aux 1.209 load[min 0.012 max 0.500]
+step 3000/6103 ce 4.0335 ema 3.9679 lr 4.33e-04 tok/s 27.0k elapsed 170s aux 1.223 load[min 0.006 max 0.500]
+  eval step 3000 tokens 24.6M val 4.0631
+step 3100/6103 ce 3.9538 ema 3.9613 lr 4.15e-04 tok/s 26.6k elapsed 203s aux 1.234 load[min 0.013 max 0.500]
+step 3200/6103 ce 3.8895 ema 3.9012 lr 3.97e-04 tok/s 26.9k elapsed 231s aux 1.252 load[min 0.021 max 0.500]
+  eval step 3250 tokens 26.6M val 4.0113
+step 3300/6103 ce 3.9239 ema 3.9010 lr 3.79e-04 tok/s 26.6k elapsed 265s aux 1.233 load[min 0.018 max 0.500]
+step 3400/6103 ce 3.9421 ema 3.8922 lr 3.62e-04 tok/s 26.4k elapsed 298s aux 1.251 load[min 0.013 max 0.500]
+step 3500/6103 ce 3.9334 ema 3.8518 lr 3.44e-04 tok/s 26.6k elapsed 326s aux 1.257 load[min 0.012 max 0.500]
+  eval step 3500 tokens 28.7M val 3.9685
+step 3600/6103 ce 3.9423 ema 3.8610 lr 3.27e-04 tok/s 26.3k elapsed 361s aux 1.248 load[min 0.020 max 0.500]
+step 3700/6103 ce 3.8123 ema 3.8167 lr 3.10e-04 tok/s 26.4k elapsed 391s aux 1.253 load[min 0.012 max 0.500]
+  eval step 3750 tokens 30.7M val 3.9331
+step 3800/6103 ce 3.8897 ema 3.8379 lr 2.93e-04 tok/s 26.0k elapsed 429s aux 1.234 load[min 0.012 max 0.500]
+step 3900/6103 ce 3.7307 ema 3.7836 lr 2.77e-04 tok/s 26.1k elapsed 459s aux 1.228 load[min 0.022 max 0.500]
+step 4000/6103 ce 4.0270 ema 3.7810 lr 2.61e-04 tok/s 26.1k elapsed 489s aux 1.219 load[min 0.029 max 0.500]
+  eval step 4000 tokens 32.8M val 3.8994
+step 4100/6103 ce 3.7577 ema 3.7558 lr 2.45e-04 tok/s 25.8k elapsed 527s aux 1.228 load[min 0.017 max 0.500]
+step 4200/6103 ce 3.7094 ema 3.7468 lr 2.30e-04 tok/s 25.9k elapsed 556s aux 1.206 load[min 0.012 max 0.500]
+  eval step 4250 tokens 34.8M val 3.8665
+step 4300/6103 ce 3.6343 ema 3.7388 lr 2.16e-04 tok/s 25.6k elapsed 594s aux 1.203 load[min 0.012 max 0.500]
+step 4400/6103 ce 3.7477 ema 3.7226 lr 2.01e-04 tok/s 25.7k elapsed 624s aux 1.215 load[min 0.012 max 0.500]
+step 4500/6103 ce 3.6994 ema 3.6769 lr 1.88e-04 tok/s 25.8k elapsed 654s aux 1.211 load[min 0.017 max 0.500]
+  eval step 4500 tokens 36.9M val 3.8374
+step 4600/6103 ce 3.8233 ema 3.7242 lr 1.75e-04 tok/s 25.6k elapsed 692s aux 1.194 load[min 0.018 max 0.500]
+step 4700/6103 ce 3.5264 ema 3.6626 lr 1.63e-04 tok/s 25.6k elapsed 722s aux 1.193 load[min 0.013 max 0.500]
+  eval step 4750 tokens 38.9M val 3.8127
+step 4800/6103 ce 3.6657 ema 3.6754 lr 1.51e-04 tok/s 25.4k elapsed 759s aux 1.190 load[min 0.022 max 0.500]
+step 4900/6103 ce 3.4503 ema 3.6776 lr 1.40e-04 tok/s 25.5k elapsed 790s aux 1.165 load[min 0.030 max 0.500]
+step 5000/6103 ce 3.7562 ema 3.6311 lr 1.30e-04 tok/s 25.6k elapsed 820s aux 1.177 load[min 0.013 max 0.500]
+  eval step 5000 tokens 41.0M val 3.7901
+step 5100/6103 ce 3.5519 ema 3.6249 lr 1.21e-04 tok/s 25.4k elapsed 857s aux 1.169 load[min 0.012 max 0.500]
+step 5200/6103 ce 3.4958 ema 3.6366 lr 1.12e-04 tok/s 25.5k elapsed 887s aux 1.167 load[min 0.023 max 0.500]
+  eval step 5250 tokens 43.0M val 3.7716
+step 5300/6103 ce 3.6387 ema 3.6076 lr 1.05e-04 tok/s 25.4k elapsed 924s aux 1.158 load[min 0.025 max 0.500]
+step 5400/6103 ce 3.6455 ema 3.6206 lr 9.78e-05 tok/s 25.4k elapsed 954s aux 1.167 load[min 0.006 max 0.499]
+step 5500/6103 ce 3.4771 ema 3.6111 lr 9.18e-05 tok/s 25.5k elapsed 984s aux 1.149 load[min 0.021 max 0.499]
+  eval step 5500 tokens 45.1M val 3.7589
+step 5600/6103 ce 3.5020 ema 3.6103 lr 8.68e-05 tok/s 25.3k elapsed 1022s aux 1.148 load[min 0.007 max 0.499]
+step 5700/6103 ce 3.4941 ema 3.5966 lr 8.26e-05 tok/s 25.4k elapsed 1052s aux 1.159 load[min 0.013 max 0.500]
+  eval step 5750 tokens 47.1M val 3.7464
+step 5800/6103 ce 3.5350 ema 3.5903 lr 7.93e-05 tok/s 25.3k elapsed 1089s aux 1.148 load[min 0.014 max 0.499]
+step 5900/6103 ce 3.5470 ema 3.5798 lr 7.69e-05 tok/s 25.3k elapsed 1119s aux 1.131 load[min 0.013 max 0.498]
+step 6000/6103 ce 3.6683 ema 3.5906 lr 7.55e-05 tok/s 25.4k elapsed 1149s aux 1.140 load[min 0.016 max 0.500]
+  eval step 6000 tokens 49.2M val 3.7351
+step 6100/6103 ce 3.3648 ema 3.5737 lr 7.50e-05 tok/s 25.3k elapsed 1187s aux 1.138 load[min 0.006 max 0.499]
+step 6103/6103 ce 3.6104 ema 3.5736 lr 7.50e-05 tok/s 25.3k elapsed 1187s aux 1.133 load[min 0.006 max 0.499]
+  eval step 6103 tokens 50.0M val 3.7325
+{
+  "arm": "moe_8x_top2",
+  "params": {
+    "total": 111180288,
+    "embedding": 4194304,
+    "non_embedding": 106985984,
+    "active_per_token": 35682816
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 2441,
+  "end_step": 6103,
+  "steps_total": 6103,
+  "tokens_start": 19996672,
+  "tokens_end": 49995776,
+  "final_train_ce_ema": 3.5736051229018533,
+  "final_val_loss_2M": 3.7345265602369646,
+  "val_ppl": 41.86819879996547,
+  "tokens_per_s": 25100.056648008063,
+  "wall_s": 1195.5519387722015,
+  "peak_mem_allocated_mb": 4530.81787109375,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "val_at_resume_dense_ckpt": 4.155643361513732,
+  "val_at_resume_this_model": 4.155628184803197,
+  "experts": 8,
+  "topk": 2,
+  "aux_coef": 0.01,
+  "router_std": 0.02,
+  "expert_divergence_per_layer": [
+    0.38754840195178986,
+    0.4277391731739044,
+    0.41346634924411774,
+    0.41179607808589935,
+    0.400886133313179,
+    0.3730551153421402
+  ],
+  "final_expert_load": [
+    [
+      0.00439453125,
+      0.02099609375,
+      0.1015625,
+      0.22900390625,
+      0.0576171875,
+      0.49951171875,
+      0.080078125,
+      0.0068359375
+    ],
+    [
+      0.10888671875,
+      0.11865234375,
+      0.16845703125,
+      0.08447265625,
+      0.13720703125,
+      0.07421875,
+      0.21826171875,
+      0.08984375
+    ],
+    [
+      0.15380859375,
+      0.1416015625,
+      0.06640625,
+      0.16552734375,
+      0.06298828125,
+      0.10986328125,
+      0.16357421875,
+      0.13623046875
+    ],
+    [
+      0.1328125,
+      0.11865234375,
+      0.109375,
+      0.1640625,
+      0.11767578125,
+      0.1025390625,
+      0.08740234375,
+      0.16748046875
+    ],
+    [
+      0.08935546875,
+      0.14794921875,
+      0.0673828125,
+      0.0927734375,
+      0.21826171875,
+      0.14453125,
+      0.0859375,
+      0.15380859375
+    ],
+    [
+      0.154296875,
+      0.25927734375,
+      0.05908203125,
+      0.140625,
+      0.06103515625,
+      0.16552734375,
+      0.13818359375,
+      0.02197265625
+    ]
+  ]
+}

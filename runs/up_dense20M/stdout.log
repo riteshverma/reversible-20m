@@ -1,0 +1,59 @@
+arm=dense_phase1 params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} steps 0->2441 of 6103 lr=0.00075
+step 100/6103 ce 6.4028 ema 6.6495 lr 6.15e-04 tok/s 74.3k elapsed 11s
+step 200/6103 ce 5.9220 ema 5.9640 lr 7.50e-04 tok/s 73.9k elapsed 22s
+  eval step 250 tokens 2.0M val 5.7567
+step 300/6103 ce 5.5543 ema 5.6115 lr 7.49e-04 tok/s 68.8k elapsed 36s
+step 400/6103 ce 5.3449 ema 5.3694 lr 7.46e-04 tok/s 69.3k elapsed 47s
+step 500/6103 ce 5.1761 ema 5.1940 lr 7.43e-04 tok/s 69.5k elapsed 59s
+  eval step 500 tokens 4.1M val 5.2320
+step 600/6103 ce 5.0169 ema 5.0750 lr 7.39e-04 tok/s 67.0k elapsed 74s
+step 700/6103 ce 4.9350 ema 4.9540 lr 7.35e-04 tok/s 67.1k elapsed 86s
+  eval step 750 tokens 6.1M val 5.0020
+step 800/6103 ce 4.9249 ema 4.8921 lr 7.29e-04 tok/s 65.3k elapsed 100s
+step 900/6103 ce 4.7596 ema 4.8040 lr 7.22e-04 tok/s 65.4k elapsed 113s
+step 1000/6103 ce 4.7076 ema 4.7263 lr 7.15e-04 tok/s 65.4k elapsed 126s
+  eval step 1000 tokens 8.2M val 4.7936
+step 1100/6103 ce 4.7748 ema 4.6446 lr 7.07e-04 tok/s 64.1k elapsed 141s
+step 1200/6103 ce 4.5464 ema 4.5554 lr 6.97e-04 tok/s 64.1k elapsed 154s
+  eval step 1250 tokens 10.2M val 4.5702
+step 1300/6103 ce 4.5310 ema 4.4729 lr 6.88e-04 tok/s 63.1k elapsed 169s
+step 1400/6103 ce 4.4409 ema 4.4128 lr 6.77e-04 tok/s 63.1k elapsed 182s
+step 1500/6103 ce 4.3918 ema 4.3633 lr 6.66e-04 tok/s 63.0k elapsed 195s
+  eval step 1500 tokens 12.3M val 4.4345
+step 1600/6103 ce 4.0332 ema 4.2968 lr 6.53e-04 tok/s 62.3k elapsed 211s
+step 1700/6103 ce 4.3433 ema 4.2929 lr 6.41e-04 tok/s 62.3k elapsed 224s
+  eval step 1750 tokens 14.3M val 4.3326
+step 1800/6103 ce 4.2314 ema 4.2167 lr 6.27e-04 tok/s 61.7k elapsed 239s
+step 1900/6103 ce 4.1976 ema 4.1964 lr 6.13e-04 tok/s 61.8k elapsed 252s
+step 2000/6103 ce 4.2545 ema 4.1969 lr 5.99e-04 tok/s 18.3k elapsed 894s
+  eval step 2000 tokens 16.4M val 4.2577
+step 2100/6103 ce 4.1194 ema 4.1605 lr 5.84e-04 tok/s 18.9k elapsed 908s
+step 2200/6103 ce 4.1203 ema 4.1243 lr 5.68e-04 tok/s 19.6k elapsed 919s
+  eval step 2250 tokens 18.4M val 4.1968
+step 2300/6103 ce 4.0740 ema 4.1114 lr 5.52e-04 tok/s 20.2k elapsed 932s
+step 2400/6103 ce 3.9930 ema 4.1002 lr 5.36e-04 tok/s 20.8k elapsed 943s
+step 2441/6103 ce 4.0717 ema 4.0686 lr 5.29e-04 tok/s 21.1k elapsed 948s
+  eval step 2441 tokens 20.0M val 4.1556
+{
+  "arm": "dense_phase1",
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 0,
+  "end_step": 2441,
+  "steps_total": 6103,
+  "tokens_start": 0,
+  "tokens_end": 19996672,
+  "final_train_ce_ema": 4.0685526913354435,
+  "final_val_loss_2M": 4.1593430243695755,
+  "val_ppl": 64.02944299513524,
+  "tokens_per_s": 21023.424276707105,
+  "wall_s": 950.1495273113251,
+  "peak_mem_allocated_mb": 2129.78369140625,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+}

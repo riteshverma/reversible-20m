@@ -1,0 +1,47 @@
+arm=dense_phase1 params={'total': 23075328, 'embedding': 4194304, 'non_embedding': 18881024} steps 0->2441 of 6103 lr=0.00075
+step 200/6103 ce 5.9212 ema 5.9641 lr 7.50e-04 tok/s 13.1k elapsed 125s
+  eval step 250 tokens 2.0M val 5.7577
+step 400/6103 ce 5.3468 ema 5.3699 lr 7.46e-04 tok/s 12.4k elapsed 265s
+  eval step 500 tokens 4.1M val 5.2346
+step 600/6103 ce 5.0180 ema 5.0757 lr 7.39e-04 tok/s 12.1k elapsed 405s
+  eval step 750 tokens 6.1M val 5.0008
+step 800/6103 ce 4.9239 ema 4.8917 lr 7.29e-04 tok/s 12.0k elapsed 545s
+step 1000/6103 ce 4.7084 ema 4.7286 lr 7.15e-04 tok/s 12.2k elapsed 671s
+  eval step 1000 tokens 8.2M val 4.7983
+step 1200/6103 ce 4.5524 ema 4.5573 lr 6.97e-04 tok/s 12.1k elapsed 811s
+  eval step 1250 tokens 10.2M val 4.5725
+step 1400/6103 ce 4.4388 ema 4.4148 lr 6.77e-04 tok/s 12.1k elapsed 951s
+  eval step 1500 tokens 12.3M val 4.4334
+step 1600/6103 ce 4.0065 ema 4.2987 lr 6.53e-04 tok/s 12.0k elapsed 1092s
+  eval step 1750 tokens 14.3M val 4.3330
+step 1800/6103 ce 4.2293 ema 4.2162 lr 6.27e-04 tok/s 12.0k elapsed 1232s
+step 2000/6103 ce 4.2527 ema 4.1953 lr 5.99e-04 tok/s 12.1k elapsed 1358s
+  eval step 2000 tokens 16.4M val 4.2587
+step 2200/6103 ce 4.1214 ema 4.1241 lr 5.68e-04 tok/s 12.0k elapsed 1498s
+  eval step 2250 tokens 18.4M val 4.1989
+step 2400/6103 ce 3.9957 ema 4.0999 lr 5.36e-04 tok/s 12.0k elapsed 1638s
+step 2441/6103 ce 4.0719 ema 4.0676 lr 5.29e-04 tok/s 12.0k elapsed 1664s
+  eval step 2441 tokens 20.0M val 4.1565
+{
+  "arm": "dense_phase1",
+  "params": {
+    "total": 23075328,
+    "embedding": 4194304,
+    "non_embedding": 18881024
+  },
+  "batch": 16,
+  "seq": 512,
+  "lr": 0.00075,
+  "start_step": 0,
+  "end_step": 2441,
+  "steps_total": 6103,
+  "tokens_start": 0,
+  "tokens_end": 19996672,
+  "final_train_ce_ema": 4.067602544367369,
+  "final_val_loss_2M": 4.1597328872114225,
+  "val_ppl": 64.05441056239033,
+  "tokens_per_s": 11925.777297983934,
+  "wall_s": 1677.3363063335419,
+  "peak_mem_allocated_mb": 2936.28369140625,
+  "gpu": "Tesla T4"
+}
